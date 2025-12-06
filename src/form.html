@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>СЛУЖБА ПО КОНТРАКТУ</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Favicon -->
+	<!-- <link rel="icon" href="img/shortcut.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon"> -->
+	<!-- OG -->
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="body-wrap">
+		<header class="header header-form" id="header">
+			<nav class="nav nav-black">
+				<div class="container">
+					<div class="nav__box q">
+						<a href="index.html" class="nav__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<ul>
+							<li>
+								<a href="#info" class="go_to">
+									выплаты
+								</a>
+							</li>
+							<li>
+								<a href="#area" class="go_to">
+									требования
+								</a>
+							</li>
+							<li>
+								<a href="#contacts" class="go_to">
+									контакты
+								</a>
+							</li>
+						</ul>
+						<div class="nav__info q">
+							<a href="form.html" class="nav__link">
+								ОСТАВИТЬ ЗАЯВКУ <img src="img/a1.svg" alt="" class="svg">
+							</a>
+						</div>
+						<div class="menu-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div class="menu">
+						<p class="menu__name">
+							Меню
+						</p>
+						<ul>
+							<li>
+								<a href="index.html#info">
+									выплаты
+								</a>
+							</li>
+							<li>
+								<a href="index.html#area">
+									требования
+								</a>
+							</li>
+							<li>
+								<a href="index.html#contacts">
+									контакты
+								</a>
+							</li>
+						</ul>
+						<p class="menu__text">
+							г. Москва, ул. Яблочкова 5 с 1, <br> Единый пункт отбора на <br> военную службу по контракту.
+						</p>
+						<a href="tel:+74996869344 " class="menu__tel">
+							+7 (499) 686-93-44
+						</a>
+						<p class="menu__sub">
+							(звонок бесплатный по России)
+						</p>
+						<div class="header__links">
+							<a href="form.html" class="btn header__btn">
+								оставить заявку <img src="img/btn2.svg" alt="" class="svg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="form-page" id="form-page">
+			<div class="container">
+				<div class="form-page__box">
+					<p class="form-page__text">
+						<span class="yel">Предупреждения перед заполнением формы заявки:</span> Не сможем вас оформить, если:
+					</p>
+					<p class="form-page__text">
+						- вы действующий военнослужащий (переводами не занимаемся); <br>
+						- если вы являетесь комиссованным после 2005 года; <br>
+						- имеете тяжелую инвалидность;
+					</p>
+					<div class="popup__wrap">
+						<p class="popup__title">
+							<span class="yel"> форма</span> сбора заявок
+						</p>
+						<form action="success.php" class="form js-form" id="popupResult" method="post">
+							<div class="form-item">
+								<input type="text" name="name" class="form-input form__field" required>
+								<label class="form-label">фио</label>
+							</div>
+							<div class="form-item">
+								<input type="tel" name="tel" class="form-input form__field tel" required>
+								<label class="form-label">Телефон</label>
+							</div>
+							<div class="form-item">
+								<input type="text" name="region" class="form-input form__field" required>
+								<label class="form-label">Город проживания</label>
+							</div>
+							<div class="form-item">
+								<input type="text" name="category" class="form-input form__field" required>
+								<label class="form-label">категория годности</label>
+							</div>
+							<div class="form-item">
+								<input type="text" name="ready" class="form-input form__field" required>
+								<label class="form-label">Готовы служить по контракту?</label>
+							</div>
+							<button class="popup__btn btn" data-submit>
+								оставить заявку <img src="img/btn2.svg" alt="" class="svg">
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__box">
+					<div class="footer__top q">
+						<a href="tel:+79648819735" class="footer__tel">
+							+7 (964) 881-97-35
+						</a>
+						<a href="tel:+74996869344" class="footer__tel">
+							+7 (499) 686-93-44
+						</a>
+					</div>
+					<div class="footer__area q">
+						<ul>
+							<li>
+								<a href="index.html#info">
+									выплаты
+								</a>
+							</li>
+							<li>
+								<a href="index.html#area">
+									требования
+								</a>
+							</li>
+							<li>
+								<a href="index.html#contacts">
+									контакты
+								</a>
+							</li>
+						</ul>
+						<div class="contacts__socials q">
+							<a href="#" target="_blank">
+								<img src="img/soc1.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="_blank">
+								<img src="img/soc2.svg" alt="" class="svg">
+							</a>
+						</div>
+					</div>
+					<div class="footer__info">
+						<div>
+							<p class="footer__name">
+								Адрес:
+							</p>
+							<p class="footer__text">
+								г. Москва, ул. Яблочкова 5 с 1, Единый пункт отбора на военную службу по контракту
+							</p>
+						</div>
+						<a href="https://gasfort.ru/" class="footer__com q" target="_blank">
+							Сделано в <img src="img/com.svg" alt="">
+						</a>
+						<a href="#" class="footer__policy" target="_blank">
+							Политика обработки <br> персональных данных
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			function init() {
+				var myMap = new ymaps.Map("map", {
+					// Центр карты, указываем коордианты
+					center: [56.315341, 43.878515],
+					// Масштаб, тут все просто
+					zoom: 14,
+					// Отключаем все элементы управления
+					controls: []
+				});
+
+				var myGeoObjects = [];
+
+				// Наша метка, указываем коордианты
+				myGeoObjects = new ymaps.Placemark([56.315341, 43.878515], {
+					balloonContentBody: 'Army',
+				}, {
+					iconLayout: 'default#image',
+					// Путь до нашей картинки
+					iconImageHref: 'img/map.svg',
+					// Размер по ширине и высоте
+					iconImageSize: [140, 140],
+					// Смещение левого верхнего угла иконки относительно
+					// её «ножки» (точки привязки).
+					iconImageOffset: [-35, -35]
+				});
+
+				var clusterer = new ymaps.Clusterer({
+					clusterDisableClickZoom: false,
+					clusterOpenBalloonOnClick: false,
+				});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				// Отлючаем возможность изменения масштаба
+				myMap.behaviors.disable('scrollZoom');
+
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<script src="js/all.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
+		<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+		<script type="text/javascript"
+			src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+</body>
+
+</html>
