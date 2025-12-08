@@ -676,7 +676,7 @@ input:-moz-placeholder {
 .nav__logo {
   display: block;
   position: relative;
-  left: -19px;
+  left: -27px;
 }
 .nav__logo img {
   width: 100%;
@@ -742,7 +742,7 @@ input:-moz-placeholder {
   border-radius: 0px;
   overflow: hidden;
   margin: 0px auto 0;
-  padding: 40px 0 50px;
+  padding: 60px 0 50px;
 }
 .header__txt {
   color: rgb(255, 255, 255);
@@ -3190,7 +3190,7 @@ h2.orange {
     margin: 30px 0;
   }
   .header {
-    padding-top: 20px;
+    padding-top: 42px;
   }
   .page .header {
     padding-bottom: 124px;
@@ -4672,5 +4672,14 @@ h2.orange {
   }
   h2.orange {
     margin-bottom: 25px;
+  }
+  .header {
+    padding-top: 20px;
+  }
+  .nav__logo {
+    left: 0;
+    width: 202px;
+    top: -1px;
+    height: 90px;
   }
 }
